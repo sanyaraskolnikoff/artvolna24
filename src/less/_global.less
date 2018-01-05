@@ -1,0 +1,27 @@
+@size-small: 8px;
+@size-medium: 12px;
+@size-big: 16px;
+@size-large: 24px;
+@size-verylarge: 48px;
+@size-huge: 96px;
+@size-veryhuge: 128px;
+
+@color-pink: #FC4646;
+@color-browngray: #483F3F;
+@color-white: #FFFFFF;
+@color-gray: #606060;
+@color-st-white: rgba(255, 255, 255, .5);
+@color-st-black: rgba(0, 0, 0, .4);
+@color-beige: #EFECE5;
+@color-darkbeige: #C4BBAB;
+
+@bold: 700;
+@bolder: 800;
+
+.screen_medium(@rules) {
+    @media only screen and (min-width: 768px) { @rules(); }
+}
+
+.screen_big(@rules) {
+    @media only screen and (min-width: 1400px) { @rules(); }
+}

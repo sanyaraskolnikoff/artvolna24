@@ -1,0 +1,11 @@
+User-Agent: *
+Disallow: 
+
+User-agent: Yandex
+Disallow: 
+Host: artvolna24.ru
+
+User-agent: Googlebot
+Disallow: 
+
+

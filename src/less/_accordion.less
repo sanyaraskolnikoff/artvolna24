@@ -1,0 +1,32 @@
+.accordion-switcher {
+    margin-top: @size-medium;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.5s;
+    background-color: @color-beige;
+    padding: @size-small;
+    &:before {
+        display: inline-block;
+        content: '\f0a4';
+        margin-right: @size-small;
+        font: normal normal normal 14px/1 FontAwesome;
+        transition: transform 0.5s ease;
+    }
+}
+
+.accordion-switcher-active {
+    &:before {
+        transform: rotate(90deg);
+        //content: '\f0a7';
+        //margin-right: @size-small;
+        //font: normal normal normal 14px/1 FontAwesome;
+    }
+}
+
+.accordion-panel {
+    display: block;
+    overflow: hidden;
+    //max-height: 0;
+    transition: max-height 0.2s ease-out;
+}

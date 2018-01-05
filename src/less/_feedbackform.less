@@ -1,0 +1,58 @@
+@import "_global.less";
+
+.feedback-form {
+    padding: 0 @size-medium;
+    background-color: @color-beige;
+    text-align: center;
+    h3 {
+        padding: @size-large 0 @size-medium 0;
+        margin: 0;
+        text-align: center;
+        font-size: 150%;
+        width: 100%;
+    }
+    label {
+        margin: 0 @size-small;
+        padding: @size-large 0;
+    }
+    input[type=text] {
+        border-radius: 6px;
+        padding: @size-small;
+        margin: @size-medium 0;
+        width: 100%;
+    }
+    input[type=submit], input[type=button] {
+        background-color: @color-pink;
+        color: @color-white;
+        padding: @size-medium;
+        margin: @size-medium 0 @size-large 0;
+        width: 40%;
+        border: 0;
+        font-weight: @bolder;
+        &:hover {
+            transform: scale(1.02, 1.02);
+            transition: transform .2s;
+            transition: background-color 0.2s;
+        }
+        &:active {
+            //color: @color-browngray;
+            //background-color: @color-beige;
+            background-color: @color-browngray;
+            transform: scale(.99, .99);
+            transition: transform 0.1s;
+            transition: background-color 0.1s;
+        }
+    }
+    input[type=button][disabled=disabled] {
+        background-color: @color-gray;
+    }
+    textarea {
+        border-radius: 6px;
+        padding: @size-small;
+        margin: @size-medium 0;
+        width: 100%;
+    }
+    .invalid {
+        border-color: @color-pink;
+    }
+}

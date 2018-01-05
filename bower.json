@@ -1,0 +1,13 @@
+{
+  "name": "artvolna24",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,104 @@
+@import "_global.less";
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding: @size-large 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .4);
+    .modal-content {
+        position: relative;
+        background-color: @color-white;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        border-radius: 16px 16px 16px 16px;
+        
+        //-webkit-animation-name: modal-animatetop;
+        //-moz-animation-name: modal-animatetop;
+        //-o-animation-name: modal-animatetop;
+        //-webkit-animation-duration: 0.5s;
+        //-moz-animation-duration: 0.5s;
+        //-o-animation-duration: 0.5s;
+        animation-name: modal-animatetop;
+        animation-duration: 0.5s;
+        
+        .screen_big ({ width: 60%; });
+        
+    }
+    header {
+        border-radius: 16px 16px 0 0;
+        padding: 8px @size-large;            
+        background-color: @color-pink;
+        > h2 {
+            color: white;
+            font-size: 150%;
+            padding: 0;
+            margin: 0;
+        }
+        > .modal-close {
+            color: white;
+            float: right;
+            font-size: 150%;
+            font-weight: @bold;
+            cursor: pointer;
+        }
+        &:after { content: ''; clear: both; display: table; }
+    }
+    
+    section {
+        padding: @size-large;
+        .left {
+            .screen_medium({
+                padding-top: 0;
+                padding-right: @size-big;
+            });
+        }
+        .right {
+            .screen_medium({
+                padding-top: 0;
+                padding-left: @size-big;
+            });
+            > img.image-size {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-width: 1px 0px 1px 0px;
+                border-style: solid;
+                padding: 8px 0; 
+                margin: 16px 0;
+            }
+        }
+        .slider-wrapper { padding-bottom: @size-large; }
+    }
+}
+
+/*
+@-webkit-keyframes modal-animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@-moz-keyframes modal-animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@-o-keyframes modal-animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+*/
+
+@keyframes modal-animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
