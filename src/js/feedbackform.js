@@ -12,7 +12,7 @@ $(function() {
             return;
         }
         $.ajax({
-            url: "https://formspree.io/sanyaraskolnikoff@gmail.com",
+            url: "https://formspree.io/artvolna24@yandex.ru",
             method: "POST",
             data: {name: name, phone: phone, comment: comment},
             dataType: "json"
