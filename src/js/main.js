@@ -59,7 +59,7 @@ $(function() {
             return;
         }
         $.ajax({
-            url: "https://formspree.io/artvolna24@yandex.ru",
+            url: "https://formspree.io/sanyaraskolnikoff@gmail.com",
             method: "POST",
             data: {name: name, phone: phone, comment: comment},
             dataType: "json"
